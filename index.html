@@ -1,89 +1,63 @@
-<!-- 문서 유형 선언 어떤 HTML 버전을 사용하고 있는지 등을 명시 -->
 <!DOCTYPE html>
 <html>
-    <!--head - 웹페이지의 정보를 담고 있음 -->
-    <head>
-        <!-- 문자 인코딩 - UTF-8 설정 -->
-        <meta charset="UTF-8">
-        <title>Gilber's Personal Site</title>
-    </head>
-    <!--body - 실제로 화면에 나타내는 내용을 담는 태그 -->
-    <body>
-        <!-- 기본 정보 및 인사말 -->
-        <table cellspacing="20">
-            <tr>
-                <td>
-                    <img src="./img/gilbert-modified.png" style="width:250px; height:250px;"alt="Gilbert profile picture"/>
-                </td>
-                <td>
-                    <h1>Gilbert Kim</h1>
-                    <p><em>Data Engineer of <strong><a href="https://www.perfact.co.kr/">Aone Performance Factory</a></strong></em></p>
-                    <p><em>Department of <strong>Data Intelligence</strong></em></p>
-                    <br>
-                    <p>Hi, This is Gilbert Kim. Korea name is Kisung.Kim</p>
-                </td>
-            </tr>
-        </table>
+<!-- head tag: 사이트내 각종 설정들 -->
+<head>
+    <meta charset="UTF-8">
+    <!-- title -->
+    <title>Gilbert.Kim</title>
+    <!-- css file 적용 -->
+    <link rel="stylesheet" href="./css/styles.css">  
+    <!-- favicon 적용 -->
+    <link rel="icon" href="./img/favicon.ico">
+</head>
+<!-- body tag: 실제 구동될 html 코드 -->
+<body>
+    <!-- div태그는 단지 구조를 주고 콘텐츠를 분할하기 위한 것 -->
+    <div class="top-container">
+        <img class="top-cloud" src="./img/cloud.png" alt="cloud-img">
+        <h1>I'm Gilbert.Kim</h1>
+        <h2>a <span class="data">Data</span> Engineer</h2>
+        <img class="bottom-cloud" src="./img/cloud.png" alt="cloud-img">
+        <img src="./img/mountain.png" alt="mountain-img">
+    </div>
+
+    <div class="middle-container">
+        <div class="profile">
+            <img class="profile-img" src="./img/gilbert-icon.png" alt="Gilbert profile picture">
+            <h2>Hello.</h2>
+            <p class="intro">I am a Data Engineer at Aone Performance Factory. I ❤️ Coffee!!</p>
+        </div>
         <hr>
-        <!-- 공부 및 학력 정보 -->
-        <h3>Studying and Education</h3>
-        <ul>
-            <li>Present - Studying for Node JS</li>
-            <li>Present - Studying for Python</li>
-        </ul>
+
+        <div class="skills">
+            <h2>My Skills.</h2>
+            <div class="skill-row">
+                <img class="python" src="./img/python.png" alt="python-icon">
+
+                <h3>Python & Data</h3>
+                <p class="python-skill-description">I started learning to python when I was 33 year old beacause I realized the importance of data. So I decided to become Data Engineer.</p>
+
+            </div>
+            <div class="skill-row">
+                <img class="nodejs" src="./img/node-js.png" alt="nodejs-icon">
+
+                <h3>Back-end & Node.JS</h3>
+                <p class="nodejs-skill-description">Also I was interested in the back-end. So now I am studying Node.JS too.</p>
+
+            </div>
+        </div>
         <hr>
-        <!-- 경력사항 -->
-        <h3>Working Experience</h3>
-        <table  cellspacing="10">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Work</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2021.12-Present</td>
-                    <td>Data Engineer at Aone Performace Factory</td>
-                </tr>
-                <tr>
-                    <td>2015.12-2021.02</td>
-                    <td>Sales Associate at Gucci Korea</td>
-                </tr>
-        </tbody> 
-        </table>
-        <hr>
-        <!-- 기술 스텍 -->
-        <h3>Skills</h3>
-        <table cellspacing="20">
-            <td>
-                <table>
-                    <tr>
-                        <td>Python</td>
-                        <td>⭐️⭐️⭐️⭐️</td>
-                    </tr>
-                    <tr>
-                        <td>Data Analytics</td> 
-                        <td>⭐️⭐️⭐️⭐️</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table>
-                    <tr>
-                        <td>Node JS</td>
-                        <td>⭐️⭐️⭐️</td>
-                    </tr>
-                    <tr>
-                        <td>Web Development</td> 
-                        <td>⭐️⭐️⭐️</td>
-                    </tr>
-                </table>
-            </td>
-        </table>
-        <hr>
-        <a href="hobbies.html">My Hobbies</a>
-        <br>
-        <a href="contact.html">Contact Me</a>
-    </body>
+        <div class="contact-me">
+            <h2>Get In Touch</h2>
+            <h3>If you love beer as much as I do.</h3>
+            <p class="contact-message">Love beer(or Soju) as much as I do? Let's talk about hhow awesome they are! We can code while we drink 🍻!!</p>
+            <a class="btn" href="mailto:kcs4912@gmail.com">CONTACT ME</a>
+        </div>
+    </div>
+    <div class="bottom-container">
+        <a class="footer-link" href="https://github.com/Ki-Sung">Github</a>
+        <a class="footer-link" href="https://www.linkedin.com/in/kisung-kim-b65211218/">Linkedin</a>
+        <p class="copyright">© 2023 Kisung.Kim</p>
+    </div>
+</body>
 </html>
